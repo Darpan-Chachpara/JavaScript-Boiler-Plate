@@ -1,0 +1,89 @@
+
+(Can use below link to directly work on Regrex without installing anything)
+
+https://regexr.com/ 
+
+
+ALways Backtrack and then check
+
+
+Expression:- man   // will check for man and show all
+1-this is mad man mango mangroove aman
+checking for man and it will check for every man (that we have to avoid)
+
+
+
+
+Expression:- .an    // will check for an and . will give all the name with an and will print an with its previous alphabet
+
+Dot means anything except new line character
+.    -> wild card
+will take anything
+eg:- man, tan, ban, can, .. (if darpan then it will give pan), it will also take space( an) , etc:- number, ! anything
+
+
+
+Expression:- \.an    // will check for an and \ will give all the name with exact match only
+
+\ means exact match
+\    -> backward slash
+will take exact match
+eg:- dar.an, neetan, vruan, ...  (it will only give .an only nothing else)
+
+For checking path use:- \/user\/home\/darpan this will check (user/home/darpan)
+
+
+
+// One literal character check only can not be RC together
+Expression:- [RC]ode   // will check for the things present inside [], globally but one at a time
+[] -> character sets
+will check for all globally
+eg:- Rode, Code, Dode, ...  (will take Rode and Code as well) (if RCode then it will take it with respect to RC)
+
+For example:- wh[ae]t          - will check for what, whet, but will not take whot 
+
+
+
+
+Range
+Expression:- [A-Z]ziz    // will check for range in between 
+
+[ - ] means exact match
+-    -> range
+will check between range
+eg:- Aziz, Hziz, aziz, ...  (it will only check in between range , and then ziz else will not take)
+
+For checking path use:- \/user\/home\/darpan this will check (user/home/darpan)
+
+For example:- [A-Za-z]ziz      - will check for Aziz, aziz etc
+
+
+
+
+For number match in range
+Expression:-   [0-9][0-9][0-9]   
+ will check for 444-55-999
+
+Expression:-   [0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9]  
+ will check for 4     4    4  -  5    5    5  -  9    9    9
+ 
+Will not accept[20 - 25]etc
+this will check for 2, 0-2, 5
+
+
+
+
+// One literal character check only can not be RC together
+Expression:- [^RC]ode   // will check for the things present inside [], globally but one at a time
+Except RC will take everything 
+^  -> negation character or negative caracter always used in [] only
+will check for all globally
+eg:- Rode, Code, RCode, Dode, Node, Bond, ...  (will not take Rode and Code) as we are using negation so will skip the expression value (if RCode then also it will not take it with respect to RC)
+Output will be:- Dode, Node , Bond
+For example:- wh[ae]t          - will check for what, whet, but will not take whot 
+
+
+Special Cases:-
+[.]   -> means . only nothing else will compare with . and then will give Output
+[-]   -> always write at last as its meaning is range so handle accordingly
+?     -> written before ? is optional

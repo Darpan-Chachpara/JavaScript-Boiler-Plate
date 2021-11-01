@@ -1,0 +1,6 @@
+As you can See that in this Boiler-Plate there is one folder called ( .vscode ),
+inside that folder there is one file ( settings.json ),
+inside that file vscode setting for ( 
+    1- press ctrl+scroll to get your code in one view,
+    2- when you minimize the screen you will see the code in top to bottom manner no bar for right to left
+                                    )

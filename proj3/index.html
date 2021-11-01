@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnCodeOnline</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-dark">
+    <div class="container bg-warning p-4">
+      <h1 class="text-center">LearnCodeOnline</h1>
+      <ul class="list-group">
+        <li class="list-group-item">
+          Javascript course<span class="float-right">$2.1</span>
+        </li>
+        <!-- without <> it is text node -->
+        <!-- <> is element and in class can have many classes -->
+        <li class="list-group-item">
+          Darpan 126<span class="float-right">$2.2</span>
+        </li>
+      </ul>
+      <!-- btn for hover
+      btn-success for color
+      btn-lg for box size 
+      mt-4 for box margin/padding from top 
+      mx-auto for button on right
+      d-block for button in one line
+      sort-btn for running query on button in script.js file 
+      removing d-block and mx-auto will place both button on same line-->
+      <button
+        type="button"
+        class="btn btn-success btn-lg mt-4 sort-btn">
+        Ascending courses
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary btn-lg mt-4 sort-btnn">
+        Descending courses
+      </button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

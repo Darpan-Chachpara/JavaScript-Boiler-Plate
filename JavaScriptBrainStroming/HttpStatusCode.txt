@@ -1,0 +1,17 @@
+
+
+    200 - Ok                            - The request has succeeded.
+    201 - Created                       - The request has succeeded and a new resource has been created as a result.
+    202 - Accepted                      - The request has been received but not yet acted upon.
+    304 - Not Modified                  - This is used for caching purposes.
+    306 - Unused                        - This response code is no longer used; it is just reserved.
+    400 - Bad Request                   - The server could not understand the request due to invalid syntax.
+    401 - Unauthorized                  - The client must authenticate itself to get the requested response.
+    403 - Forbidden                     - The client does not have access rights to the content; that is, it is unauthorized.
+    404 - Not Found                     - The server can not find the requested resource. In the browser, this means the URL is not recognized.
+    408 - Request Timeout               - This response is sent on an idle connection by some servers, even without any previous request by the client. It means that the server would like to shut down this unused connection.
+    500 - Internal Server Error         - The server has encountered a situation it doesn't know how to handle.
+    502 - Bad Gateway                   - This error response means that the server, while working as a gateway to get a response needed to handle the request, got an invalid response.
+    503 - Service Unavailable           - The server is not ready to handle the request. Common causes are a server that is down for maintenance or that is overloaded.
+    504 - Gateway Timeout               - This error response is given when the server is acting as a gateway and cannot get a response in time.
+    505 - Http Version NotSupported     - The HTTP version used in the request is not supported by the server.
